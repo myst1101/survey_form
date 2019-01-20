@@ -1,16 +1,23 @@
 * {
   box-sizing: border-box;
 }
+.required {
+  text-align: left;
+  margin-left: 1em;
+  font-size: 0.8em;
+}
 body {
   color: gray;
 }
-p {
+/*#title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
-  padding: 2em;
-  font-size: 2em;
   text-align: center;
 }
+*/
+input:invalid {
+  border: 1px solid red;
+}
+
 form {
   max-width: 900px;
   border: 1px solid #ccc;
@@ -26,7 +33,7 @@ form {
   text-align: center;
   color: #ccc;
 }
-#head {
+#description {
   text-align: center;
   font-size: 1.5em;
   color: #ccc;
@@ -34,10 +41,13 @@ form {
   margin: 1.5em 0;
   text-shadow: 2px 2px 4px #000000;
 }
-form p {
-  text-align: left;
-  font-size: 0.7em !important;
-  color: #ccc;
+#title {
+  text-align: center;
+  font-size: 1.5em !important;
+  color: #2a2a2a;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .row {
   padding-bottom: 2em;
